@@ -1,4 +1,4 @@
-var $apiKey = 'e5ddae80e8f014c5c44afc7180709020';
+var $apiKey = '';
 
 var $api = new require('./index')($apiKey);
 
