@@ -6,13 +6,11 @@ var $api = new require('./index')($apiKey);
 $ping = $api.ping(function(r){console.log(r);});
 // Account
 $details = $api.getAccountInfo(function(r){console.log(r);});
-/*// Campaigns
-$campaigns 	 = $api.getCampaigns(function(r){console.log(r);});
-
+// Campaigns
+/*$campaigns 	 = $api.getCampaigns(function(r){console.log(r);});
 
 $campaignIDs = array_keys($campaigns);
 $campaign 	 = $api.getCampaignByID($campaignIDs[0]);
-var_dump($campaigns, $campaign);
 // Contacts
 $contacts 	= (array)$api.getContacts(null);
 $contactIDs	= array_keys($contacts);
