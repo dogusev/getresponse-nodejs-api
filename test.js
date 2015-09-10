@@ -1,33 +1,44 @@
 var $apiKey = '';
-
-var $api = new require('./index')($apiKey);
+var $apiUrl ='';
+var $api = new require('./index')($apiKey,$apiUrl);
 
 // Connection Testing
-$ping = $api.ping(function(r){console.log(r);});
+//$ping = $api.ping(function(r){console.log(r);});
 // Account
-$details = $api.getAccountInfo(function(r){console.log(r);});
+//$details = $api.getAccountInfo(function(r){console.log(r);});
+//$details = $api.getAccountFromFields(function(r){console.log(JSON.stringify(r));});
+//$details = $api.getAccountFromFieldByID('z',function(r){console.log(JSON.stringify(r));});
+//$details = $api.getAccountFromFieldsByEmail('vpolonik@q-page.ru',function(r){console.log(JSON.stringify(r));});
 // Campaigns
-/*$campaigns 	 = $api.getCampaigns(function(r){console.log(r);});
+//$campaigns 	 = $api.getCampaigns(null,null,function(r){console.log(JSON.stringify(r));});
 
-$campaignIDs = array_keys($campaigns);
-$campaign 	 = $api.getCampaignByID($campaignIDs[0]);
-// Contacts
-$contacts 	= (array)$api.getContacts(null);
-$contactIDs	= array_keys($contacts);
-$setName 	= $api.setContactName($contactIDs[0], 'John Smith');
-$setCustoms	= $api.setContactCustoms($contactIDs[0], array('title' => 'Mr', 'middle_name' => 'Fred'));
-$customs 	= $api.getContactCustoms($contactIDs[0]);
-$contact 	= $api.getContactByID($contactIDs[0]);
-$geoIP 		= $api.getContactGeoIP($contactIDs[0]);
-$opens 		= $api.getContactOpens($contactIDs[0]);
-$clicks 	= $api.getContactClicks($contactIDs[0]);
-// Find the contact ID by using email ID and delete the contact
-$contactEmail	= (array)$api.getContactsByEmail('EMAIL_ID');
-$contactEmailID	= array_keys($contactEmail);
-$deleteResponse	= $api.deleteContact($contactEmailID[0]);
-var_dump($contacts, $setName, $setCustoms, $customs, $contact, $geoIP, $opens, $clicks);
-// Blacklists
-$addBlacklist = $api.addAccountBlacklist('someone@domain.co.uk');
-$getBlacklist = $api.getAccountBlacklist();
-$delBlacklist = $api.deleteAccountBlacklist('someone@domain.co.uk');
-var_dump($addBlacklist, $getBlacklist, $delBlacklist);*/
+//$campaignIDs = array_keys($campaigns);
+//$campaign 	 = $api.getCampaignByID('l',function(r){console.log(JSON.stringify(r));});
+//$campaign 	 = $api.getCampaignByName('qpage_1actual',function(r){console.log(JSON.stringify(r));});
+
+// //Messages
+$messages = $api.getMessages(null,null,function(r){console.log(JSON.stringify(r));});
+
+/// / Contacts
+//$contacts 	= $api.getContacts(['l'],null,null,null,function(r){console.log(r);});
+//$contactIDs	= array_keys($contacts);
+
+//$setName 	= $api.setContactName('nk', 'Дениска');
+//$setCustoms	= $api.setContactCustoms('nk', {'title' : 'Mr', 'middle_name' : 'Fred'},function(r){console.log(r);});
+
+//$customs 	= $api.getContactCustoms('nk',function(r){console.log(r);});
+//$contact 	= $api.getContactByID('nk',function(r){console.log(r);});
+//$geoIP 		= $api.getContactGeoIP('nk',function(r){console.log(r);});
+//$opens 		= $api.getContactOpens('nk',function(r){console.log(r);});
+//$clicks 	= $api.getContactClicks('nk',function(r){console.log(r);});
+
+//// Find the contact ID by using email ID and delete the contact
+
+//$contactEmail	= $api.getContactsByEmail(['denial5553@gmail.com'],function(r){console.log(r);});
+
+//----------------------------------------------------$deleteResponse	= $api.deleteContact($contactEmailID[0]);
+//var_dump($contacts, $setName, $setCustoms, $customs, $contact, $geoIP, $opens, $clicks);
+//// Blacklists
+//$addBlacklist = $api.addAccountBlacklist('denial5553@gmail.com',function(r){console.log(r);});
+//$getBlacklist = $api.getAccountBlacklist(function(r){console.log(r);});
+//$delBlacklist = $api.deleteAccountBlacklist('denial5553@gmail.com',function(r){console.log(r);});
