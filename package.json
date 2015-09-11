@@ -7,8 +7,7 @@
         "email": "d.o.gusev@gmail.com"
     },
     "dependencies": {
-        "request": "*",
-      "node-json-rpc":"*"
+        "request": "*"
     },
     "devDependencies": {
     },
