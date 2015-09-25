@@ -11,10 +11,10 @@
     },
     "devDependencies": {
     },
-    /*"repository": {
+    "repository": {
         "type": "git",
-        "url": "https://github.com/dogusev/mailersoft-nodejs-api"
-    },*/
+        "url": "https://github.com/dogusev/getresponse-nodejs-api"
+    },
     "keywords": [
         "geresponse",
         "rest",
