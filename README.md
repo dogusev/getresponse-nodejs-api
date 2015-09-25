@@ -1,7 +1,12 @@
 # GetResponse nodejs api
 NodeJS API wrapper for GetResponse API
 
-# Usage examples
+## Installation
+```
+npm install getresponse-nodejs-api
+```
+
+## Usage examples
 ### Init
 ```
 var cfg = require('./config');
