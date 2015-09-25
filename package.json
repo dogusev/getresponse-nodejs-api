@@ -1,7 +1,7 @@
 {
     "name": "getresponse-nodejs-api",
     "description": "NodeJS wrapper for GetResponse API",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": {
         "name": "Dmitriy Gusev",
         "email": "d.o.gusev@gmail.com"
@@ -26,7 +26,5 @@
     "engines": {
         "node": "*"
     },
-    "readme": "NodeJS wrapper for GetResponse API port from PHP",
-    "readmeFilename": "Readme.md",
-    "_id": "getresponse-nodejs-api@0.0.2"
+    "_id": "getresponse-nodejs-api@0.0.3"
 }
